@@ -168,7 +168,7 @@ Begin
 		# Get required modules for AddToGroup switch
 		if ($AddToGroup)
 		{
-			$module = Import-Module Microsoft.Graph.Groups -PassThru -ErrorAction Ignore
+			$module = Import-Module Microsoft.Graph.Groups -PassThru
 			if (-not $module)
 			{
 				Write-Host "Installing module Microsoft.Graph.Groups"
